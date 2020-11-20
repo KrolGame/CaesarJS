@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>CaesarJS</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="../../Favicon.png" type="image/x-png"/>
+	<link rel="shortcut icon" href="../../Favicon.png" type="image/x-png"/>
+	<link rel="stylesheet" type="text/css" href="../../css/CaesarJS.css?v=1">
+</head>
+<body>
+	<main>
+		<h1 tabindex="0">Шифр Цезаря</h1>
+		<h2 tabindex="0">Введите текст:</h2>
+		<div class="input-text">
+			<label for="input-text">
+				<input type="text" id="input-text" onchange="S()" onkeyup="S()">
+			</label>
+		</div>
+		<h2 tabindex="0">Введите число сдвига:</h2>
+		<div class="input-number">
+			<label for="input-number">
+				<input type="number" id="input-number" value="0" onchange="S()" onkeyup="S()" min="-33" max="33">
+			</label>
+		</div>
+		<div class="selects">
+			<select id="select-lang" onchange="S()">
+				<option value="0">Русский</option>
+				<option value="1">Английский</option>
+			</select>
+			<select id="type" onchange="S()">
+				<option value="0">Зашивровать</option>
+				<option value="1">Расшифровать</option>
+			</select>
+		</div>
+		<h2>Результат:</h2>
+		<p tabindex="0" id="text_out"></p>
+	</main>
+<script src="../../js/CaesarJS-RU.js"></script>
+</body>
+</html>

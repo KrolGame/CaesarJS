@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>CaesarJS</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="../../Favicon.png" type="image/x-png"/>
+	<link rel="shortcut icon" href="../../Favicon.png" type="image/x-png"/>
+	<link rel="stylesheet" type="text/css" href="../../css/CaesarJS.css?v=1">
+</head>
+<body>
+	<main>
+		<h1 tabindex="0">Caesar Shift</h1>
+		<h2 tabindex="0">Write the text:</h2>
+		<div class="input-text">
+			<label for="input-text">
+				<input type="text" id="input-text" onchange="S()" onkeyup="S()">
+			</label>
+		</div>
+		<h2 tabindex="0">Write the shift number:</h2>
+		<div class="input-number">
+			<label for="input-number">
+				<input type="number" id="input-number" value="0" onchange="S()" onkeyup="S()">
+			</label>
+		</div>
+		<div class="selects">
+			<select id="select-lang" onchange="S()">
+				<option value="0">English</option>
+				<option value="1">Russian</option>
+			</select>
+			<select id="type" onchange="S()">
+				<option value="0">Encrypt</option>
+				<option value="1">Decrypt</option>
+			</select>
+		</div>
+		<h2>Result:</h2>
+		<p tabindex="0" id="text_out"></p>
+	</main>
+<script src="../../js/CaesarJS-EN.js"></script>
+</body>
+</html>
